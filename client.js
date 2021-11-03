@@ -16,7 +16,7 @@ conn.on("connect", () => {
 conn.on('connect', () => {
   conn.write('Name: LB');
 });
-return conn;
 };
+
 
 module.exports = {connect};
