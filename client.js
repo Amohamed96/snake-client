@@ -12,7 +12,9 @@ const connect = function () {
 conn.on("connect", () => {
   console.log("Connecting ...");
   console.log("Your snake is ready!");
-  
+});
+conn.on('connect', () => {
+  conn.write('Name: LB');
 });
 return conn;
 };
